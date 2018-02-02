@@ -6,11 +6,11 @@ import csv
 with open('texts.csv', 'r') as f:
     reader = csv.reader(f)
     texts = list(reader)
-
+    print(texts[0])
 with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
-
+    print(calls[-1])
 
 """
 任务0:
@@ -19,4 +19,3 @@ with open('calls.csv', 'r') as f:
 "First record of texts, <incoming number> texts <answering number> at time <time>"
 "Last record of calls, <incoming number> calls <answering number> at time <time>, lasting <during> seconds"
 """
-
